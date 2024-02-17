@@ -19,5 +19,6 @@ def generate_password(length,nums,special_chars,uppercase,lowercase):
       constraints = [(nums,"")]
       return password
 
-new_password = generate_password(8)
-print(f'\n{new_password}')
+# new_password = generate_password(8)
+# print(f'\n{new_password}')
+pattern = re.compile('i')
