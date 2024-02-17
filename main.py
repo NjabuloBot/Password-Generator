@@ -10,11 +10,12 @@ def generate_password(length,nums,special_chars,uppercase,lowercase):
 
    #Combine all characters
    all_characters = letters + digits + symbols
-   password = ''
-   #Generate password
-   for _ in range(length):
-      password+=secrets.choice(all_characters)
-   return password
+   while True:
+      password = ''
+      #Generate password
+      for _ in range(length):
+         password+=secrets.choice(all_characters)
+      return password
 
 new_password = generate_password(8)
 print(f'\n{new_password}')
