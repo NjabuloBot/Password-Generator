@@ -11,3 +11,4 @@ def generate_password(length):
    #Combine all characters
    all_characters = letters + digits + symbols
    print(f'\n{secrets.choice(all_characters)}')
+   password = ''
