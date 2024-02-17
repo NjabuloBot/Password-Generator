@@ -12,5 +12,6 @@ def generate_password(length):
    all_characters = letters + digits + symbols
    password = ''
    #Generate password
-   for i in range(length):
+   for _ in range(length):
       password+=secrets.choice(all_characters)
+   return password
