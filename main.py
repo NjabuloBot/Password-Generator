@@ -1,5 +1,5 @@
 import string
-import random
+import secrets
 
 #Define the possible characters for the password
 letters = string.ascii_letters
@@ -8,4 +8,4 @@ symbols = string.punctuation
 
 #Combine all characters
 all_characters = letters + digits + symbols
-print(random.choice(all_characters))
+print(f'\n{secrets.choice(all_characters)}')
