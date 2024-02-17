@@ -8,3 +8,4 @@ symbols = string.punctuation
 
 #Combine all characters
 all_characters = letters + digits + symbols
+print(random.choice(all_characters))
